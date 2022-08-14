@@ -1,0 +1,15 @@
+---
+layout: layouts/base.html
+---
+
+<section class="article">
+  <h1 class="mb-5">{{title}}</h1>
+  <h3 class="mb-3">By: {{author}}</h3>
+  <small>{{date}}</small>
+  <div
+    class="featuredArticleImage mt-4 mb-4"
+    style="background-image: url({{featuredImage}})"
+  ></div>
+
+  <p>{{ content | safe }}</p>
+</section>

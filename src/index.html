@@ -3,24 +3,17 @@ layout: layouts/base.html
 title: 11ty News Home
 ---
 
-<section class="article" id="featuredArticleSection">
-  <h1>Featured Article</h1>
-  {% for post in collections.featured %}
-  <div class="row mt-3">
-    <div class="col-12 col-md-5">
-      <div class="featuredArticleImage"></div>
-    </div>
-    <div class="col-12 col-md-4">
-      <h2 class="mb-5">{{post.data.title}}</h2>
-      <h3 class="mb-5"><em>{{post.data.author}}</em></h3>
-      <p class="mb-5">{{post.data.description}}</p>
-    </div>
-  </div>
-  {% endfor%}
+<section class="article">
+  {% for post in collections.featured %} {% include "featuredArticle.html" %} {%
+  endfor %}
 </section>
 
-<section class="article" id="featuredArticleSection">
-  <h1>Other Articles</h1>
+<section class="article">
+  <h1>
+    Other Articles
+    <div class="underline"></div>
+  </h1>
+
   <div class="row mt-3">
     {% for post in collections.posts %} {% include "postslist.html" %} {% endfor
     %}
