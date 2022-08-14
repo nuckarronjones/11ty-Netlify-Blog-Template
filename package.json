@@ -1,0 +1,25 @@
+{
+  "name": "11ty-netlify-blog-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuckarronjones/11ty-Netlify-Blog-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuckarronjones/11ty-Netlify-Blog-Template/issues"
+  },
+  "homepage": "https://github.com/nuckarronjones/11ty-Netlify-Blog-Template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
