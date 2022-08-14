@@ -1,5 +1,65 @@
 @import url("./reset.css");
 
-h1{
-    color:red;
+/*GLOBAL*/
+body {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: none; /* no underline */
+}
+
+/*NAV*/
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+nav a {
+  float: left;
+  text-decoration: none;
+}
+
+.logo {
+  color: #ba4358;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li a {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #4f2790;
+}
+
+.gradientBorder {
+  padding-bottom: 5px;
+  background: linear-gradient(to left, #4f2790, #ba4358),
+    linear-gradient(to left, #4f2790, #ba4358);
+  background-size: 100% 2px;
+  background-position: bottom 0 left 0, bottom 5px left 0;
+  background-repeat: no-repeat;
+}
+
+/*PAGE BODY*/
+.article {
+  margin-top: 10%;
+}
+
+.mainArticleDescriptions span {
+  margin-bottom: 10%;
+}
+
+.article h1 {
+  font-size: 40pt;
 }
