@@ -10,12 +10,15 @@ title: 11ty News Home
 
 <section class="article">
   <h1>
-    Other Articles
+    Recent Articles
     <div class="underline"></div>
   </h1>
 
   <div class="row mt-3">
-    {% for post in collections.posts %} {% include "postslist.html" %} {% endfor
-    %}
+    <!--reverse collection items from most recent-->
+    {% for post in collections.posts | reverse %}
+    <!--limit to 6 recent articles. Rest are displayed in the archive-->
+    {% if loop.index0 < 6%} {% include "postslist.html" %} {% endif %} {%
+    endfor%}
   </div>
 </section>

@@ -1,0 +1,25 @@
+---
+layout: layouts/base.html
+title: 11ty News Home
+---
+
+<section class="article">
+  {% for post in collections.about %}
+  <h1>
+    {{post.data.title}}
+    <div class="underline"></div>
+  </h1>
+  <div class="row mt-3">
+    <div class="col-12 col-md-5">
+      <div
+        class="featuredArticleImage mb-5"
+        style="background-image: url({{post.data.featuredImage}})"
+      ></div>
+    </div>
+    <div class="col-12 col-md-5">
+      <h3 class="mb-5"><em>{{post.data.name}}</em></h3>
+      <p class="mb-5 aboutParagraph">{{post.data.description}}</p>
+    </div>
+  </div>
+  {%endfor %}
+</section>

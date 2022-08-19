@@ -1,0 +1,16 @@
+---
+layout: layouts/base.html
+title: 11ty News Home
+---
+
+<section class="article">
+  <h1>
+    All Articles
+    <div class="underline"></div>
+  </h1>
+
+  <div class="row mt-3">
+    {% for post in collections.posts | reverse %} {% include "postslist.html" %}
+    {% endfor %}
+  </div>
+</section>

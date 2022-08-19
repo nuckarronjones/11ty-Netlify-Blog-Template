@@ -35,6 +35,29 @@ em {
   font-style: italic;
 }
 
+.button{
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:background-color .3s ease-in;
+  -o-transition:background-color .3s ease-in;
+  -webkit-transition:background-color .3s ease-in;
+  border:2px solid black;
+}
+.button:hover{
+background-color:black;
+color:white;
+}
+
+/*CONTAINER*/
+#mainContainer{
+  position: relative;
+  min-height:100vh;
+}
+#content-wrap{
+  padding-bottom:10rem;
+}
+
 /*NAV*/
 nav {
   font-family: "Montserrat", sans-serif;
@@ -46,22 +69,24 @@ nav {
   text-decoration: none;
 }
 
-nav a {
-  float: left;
-  text-decoration: none;
-}
-
 .logo {
   color: #ba4358;
   font-size: 1.5em;
   vertical-align: middle;
+  display: inline-block;
 }
 
-nav ul {
+#navLinks{
+  display:inline-block;
   float: right;
 }
+.navitem{
+  display:inline-block;
+}
 
-nav li a {
+.navLiLink {
+  float: left;
+  text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
   color: #4f2790;
@@ -89,8 +114,60 @@ nav li a {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+
 /*ARTICLE POST*/
 .mainArticleImage {
   width: 100%;
   height: 400px;
+}
+.articleParagraph{
+  line-height: 3em;
+}
+.aboutParagraph{
+  line-height: 1.3em;
+}
+
+/*FOOTER*/
+#footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:4rem;
+  border-top:1px black solid;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 600px) {
+
+  /*NAV*/
+  nav{
+    margin-bottom:160px;
+  }
+
+  #navLinks{
+    display:block;
+    width:100%;
+    float:left;
+  }
+  .navitem{
+    display:block;
+    
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  
+ .navLiLink {
+    float: none;
+    text-decoration: none;
+    margin:0;
+    width:100%;
+  }
+  
+  .logo {
+    color: #ba4358;
+    font-size: 1.5em;
+    vertical-align: middle;
+    display: block;
+  }
 }

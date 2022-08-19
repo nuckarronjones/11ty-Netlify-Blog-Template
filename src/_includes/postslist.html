@@ -1,6 +1,12 @@
-<div class="col-12 col-md-4">
+<div class="col-12 col-md-4 mb-3 mt-3">
   <h2 class="mb-3">{{post.data.title}}</h2>
   <h3 class="mb-4"><em>{{post.data.author}}</em></h3>
-  <p class="mb-5">{{post.data.description}}</p>
-  <a href="{{ post.url | url }}">link</a>
+  <p class="mb-3">{{post.data.description}}</p>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <a href="{{ post.url | url }}"
+        ><button class="w-100 h-100 p-2 button">Read</button></a
+      >
+    </div>
+  </div>
 </div>

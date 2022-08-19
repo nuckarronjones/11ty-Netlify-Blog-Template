@@ -4,6 +4,11 @@
     {% include "basehead.html" %}
   </head>
   <body>
-    <div class="container">{% include "navBar.html" %} {{content| safe}}</div>
+    <div class="container" id="mainContainer">
+      <div id="content-wrap">
+        {% include "navBar.html" %} {{content| safe}}
+      </div>
+        {% include "footer.html" %}
+    </div>
   </body>
 </html>
