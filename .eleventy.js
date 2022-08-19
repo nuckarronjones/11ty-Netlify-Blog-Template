@@ -4,7 +4,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/css");
   //include assets/images
   eleventyConfig.addPassthroughCopy("src/assets/");
-
+  //netlify cms
+  eleventyConfig.addPassthroughCopy("./src/admin");
   return {
     dir: {
       input: "src",
