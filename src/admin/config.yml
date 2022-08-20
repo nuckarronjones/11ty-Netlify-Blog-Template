@@ -13,8 +13,10 @@ collections:
     fields: 
       - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
       - {label: "tags", name: "tags", widget: "hidden", default: "buying"}
-      - {label: "title", name: "title", widget: "string"}
-      - {label: "description", name: "description", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image ", name: "featuredImage", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Post Body", name: "body", widget: "markdown"}
   - name: "About Me Section"
     tags: "About Me"
@@ -24,6 +26,8 @@ collections:
     fields: 
       - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
       - {label: "tags", name: "tags", widget: "hidden", default: "seling"}
-      - {label: "title", name: "title", widget: "string"}
-      - {label: "description", name: "description", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image ", name: "featuredImage", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Post Body", name: "body", widget: "markdown"}
