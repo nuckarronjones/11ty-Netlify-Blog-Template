@@ -3,6 +3,7 @@
 /*GLOBAL*/
 body {
   font-family: "Frank Ruhl Libre", serif;
+  overflow-x:hidden;
 }
 
 a {
@@ -125,10 +126,6 @@ nav {
   .buttonReadLink{
     position: absolute;
     bottom:0;
-    width:50%;
-  }
-  .cardButton{
-    width:50%;
   }
 
   .cardInner{
