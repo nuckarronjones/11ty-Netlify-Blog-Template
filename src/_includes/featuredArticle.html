@@ -2,7 +2,10 @@
   Featured Article
   <div class="underline"></div>
 </h1>
-{% for post in collections.featured %}
+<!--only select most recent featured article just in case the user mistakenly has 2 or more-->
+{% for post in collections.featured | reverse %}
+<!--if user accidently has more than 1 featured article, this loop will only end at 1-->
+{% if loop.index0 < 1%}
 <div class="row mt-3">
   <div class="col-12 col-md-5">
     <div
@@ -16,9 +19,11 @@
     <p class="mb-5">{{post.data.description}}</p>
     <div class="row">
       <div class="col-12 col-md-6">
-        <a href="{{ post.url | url }}"><button class="w-100 h-100 p-2 button">Read</button></a>
+        <a href="{{ post.url | url }}"
+          ><button class="w-100 h-100 p-2 button">Read</button></a
+        >
       </div>
     </div>
   </div>
 </div>
-{% endfor%}
+{% endif %} {% endfor%}
