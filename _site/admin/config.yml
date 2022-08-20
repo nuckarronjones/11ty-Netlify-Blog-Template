@@ -11,9 +11,10 @@ collections:
     folder: "src/posts/blog posts"
     create: true 
     fields: 
-      - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
-      - {label: "tags", name: "tags", widget: "hidden", default: "buying"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
+      - {label: "tags", name: "tags", widget: "hidden", default: "posts"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Featured Image ", name: "featuredImage", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
@@ -24,9 +25,10 @@ collections:
     folder: "src/posts/aboutMeSection"
     create: true 
     fields: 
-      - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
-      - {label: "tags", name: "tags", widget: "hidden", default: "seling"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
+      - {label: "tags", name: "tags", widget: "hidden", default: "about"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Featured Image ", name: "featuredImage", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}

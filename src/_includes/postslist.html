@@ -1,12 +1,32 @@
-<div class="col-12 col-md-4 mb-3 mt-3">
-  <h2 class="mb-3">{{post.data.title}}</h2>
-  <h3 class="mb-4"><em>{{post.data.author}}</em></h3>
-  <p class="mb-3">{{post.data.description}}</p>
-  <div class="row">
-    <div class="col-12 col-md-6">
-      <a href="{{ post.url | url }}"
-        ><button class="w-100 h-100 p-2 button">Read</button></a
+<div class="col-12 col-md-4 mb-3 mt-3 d-flex align-items-stretch">
+
+  <div class="cardInner">
+    <h2 class="mb-3">{{post.data.title}}</h2>
+    <h3 class="mb-4"><em>{{post.data.author}}</em></h3>
+    <p class="postDescription">{{post.data.description}}</p>
+    
+    <a href="{{ post.url | url }}" class="buttonReadLink"
+        ><button class=" p-2 button cardButton">Read</button></a
       >
-    </div>
+    
   </div>
+    
 </div>
+
+<style>
+  .buttonReadLink{
+    position: absolute;
+    bottom:0;
+    width:50%;
+  }
+  .cardButton{
+    width:100%;
+  }
+
+  .cardInner{
+    position:relative;
+  }
+  .postDescription{
+    margin-bottom: 50px;
+  }
+</style>

@@ -114,6 +114,31 @@ nav {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+  /*Article previews*/
+  .row-eq-height{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .buttonReadLink{
+    position: absolute;
+    bottom:0;
+    width:50%;
+  }
+  .cardButton{
+    width:50%;
+  }
+
+  .cardInner{
+    position:relative;
+  }
+  .postDescription{
+    margin-bottom: 50px;
+  }
+
+
 
 /*ARTICLE POST*/
 .mainArticleImage {
@@ -169,5 +194,15 @@ nav {
     font-size: 1.5em;
     vertical-align: middle;
     display: block;
+  }
+
+  /*ARTICLE PREVIEWS*/
+  .buttonReadLink{
+    position: absolute;
+    bottom:0;
+    width:100%;
+  }
+  .cardButton{
+    width:100%;
   }
 }
