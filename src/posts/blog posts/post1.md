@@ -1,12 +1,17 @@
 ---
-title: My First Title
-layout: layouts/post.html
+title: My First Title (test)
 author: Nicholas Jones
-tags: ["featured","posts"]
-featuredImage: "/assets/images/5885.webp"
+layout: layouts/post.html
+tags:
+  - featured
+  - posts
 date: 2021-06-15
-description: In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+featuredImage: /assets/images/5885.webp
 featured: true
+description: In publishing and graphic design, Lorem ipsum is a placeholder text
+  commonly used to demonstrate the visual form of a document or a typeface
+  without relying on meaningful content. Lorem ipsum may be used as a
+  placeholder before final copy is available.
 ---
 ## Heading 
 
