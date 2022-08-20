@@ -126,10 +126,12 @@ nav {
   .buttonReadLink{
     position: absolute;
     bottom:0;
+    width:100%;
   }
 
   .cardInner{
     position:relative;
+    width:100%;
   }
   .postDescription{
     margin-bottom: 50px;
