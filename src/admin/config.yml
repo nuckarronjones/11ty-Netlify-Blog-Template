@@ -28,8 +28,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
-      - {label: "tags", name: "tags", widget: "hidden", default: "about"}
-      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Featured Image ", name: "featuredImage", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Post Body", name: "body", widget: "markdown"}
