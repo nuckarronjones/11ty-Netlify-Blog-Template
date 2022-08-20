@@ -1,10 +1,19 @@
 # ➜ Eleventy Blog Template
 ## ✨With Netlify CMS Inegrations✨
+## ➜ [Demo Site](https://eleventyblogtemplate.netlify.app/)
 
-## Demo
-- [Netlify](https://eleventyblogtemplate.netlify.app/)
+## Deploying to Netlify
 
-## Getting Started
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nuckarronjones/11ty-Netlify-Blog-Template&stack=cms)
+
+Use the link above to copy the template to your netlify account, in addition to all the files needed for the CMS to funciton.
+
+### Set Up Authentication
+After you deploy the site to netlify, you will need to set up authentication to edit the site. To set this up, navigate to *Settings* > *Identity* > *External Providers*
+
+Once you have added a provider, you can navigate to <code>/admin</code> to edit the blog content
+
+## Running Locally
 
 ### 1) Clone Repository
 ```
@@ -43,3 +52,4 @@ Or in debug mode:
 ```
 DEBUG=* npx @11ty/eleventy
 ```
+
