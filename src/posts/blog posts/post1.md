@@ -1,5 +1,5 @@
 ---
-title: My First Title -testing
+title: My First Title
 author: Nicholas Jones
 layout: layouts/post.html
 tags:
