@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.html
 tags: buying
-title: Title 4
+title: Title4
 date: 2022-08-20T03:24:00.360Z
 featuredImage: /images/uploads/server-room.jpg
 description: In publishing and graphic design, Lorem ipsum is a placeholder text
