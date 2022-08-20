@@ -1,5 +1,5 @@
 ---
-title: My First Title
+title: My Featured Article Title
 author: Nicholas Jones
 layout: layouts/post.html
 tags:
