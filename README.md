@@ -9,9 +9,9 @@
 Use the link above to copy the template to your netlify account, in addition to all the files needed for the CMS to funciton.
 
 ### Set Up Authentication
-After you deploy the site to netlify, you will need to set up authentication to edit the site. To set this up, navigate to *Settings* > *Identity* > *External Providers*
+After you deploy the site to netlify, you will need to set up authentication to edit the site. To set this up, navigate to *Site Settings* > *Identity* > *External Providers*
 
-Once you have added a provider, you can navigate to <code>/admin</code> to edit the blog content
+Once you have added a provider, you can navigate to registration preferences to allow "invite only" users to edit site content. Navigate to the site domain and add <code>/admin</code> to edit the blog content through the admin portal. Example: <code>https:// mysitename/admin</code>
 
 ## Running Locally
 
